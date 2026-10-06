@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>CampusConnect</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+<!-- NAVBAR -->
+
+<nav>
+
+    <div class="logo">
+        CampusConnect
+    </div>
+
+    <div class="nav-links">
+
+        <a href="index.html">Home</a>
+
+        <a href="#report">
+            Report Problem
+        </a>
+
+        <a href="problems.php">
+            View Problems
+        </a>
+
+    </div>
+
+</nav>
+
+
+
+<!-- HERO SECTION -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <p class="small-title">
+            DESIGN THINKING • STUDENT SOLUTIONS
+        </p>
+
+        <h1>
+
+            Turn Campus Problems
+
+            <span>
+                Into Better Solutions.
+            </span>
+
+        </h1>
+
+        <p>
+
+            CampusConnect is a simple platform where students
+            can report campus problems, share ideas and track
+            solutions.
+
+        </p>
+
+
+        <a href="#report"
+           class="main-button">
+
+            Report a Problem →
+
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- HOW IT WORKS -->
+
+<section class="about">
+
+    <h2>
+        How It Works
+    </h2>
+
+    <p class="section-text">
+
+        A simple three-step approach inspired by
+        Design Thinking.
+
+    </p>
+
+
+    <div class="steps">
+
+
+        <div class="step-card">
+
+            <div class="number">
+                01
+            </div>
+
+            <h3>
+                Identify
+            </h3>
+
+            <p>
+
+                Students identify a problem they experience
+                around the campus.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="step-card">
+
+            <div class="number">
+                02
+            </div>
+
+            <h3>
+                Share
+            </h3>
+
+            <p>
+
+                Submit the problem with details and
+                a possible solution.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="step-card">
+
+            <div class="number">
+                03
+            </div>
+
+            <h3>
+                Improve
+            </h3>
+
+            <p>
+
+                Problems can be reviewed and their
+                progress can be tracked.
+
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- FORM SECTION -->
+
+<section class="form-section"
+         id="report">
+
+
+    <div class="form-container">
+
+
+        <div class="form-heading">
+
+            <p class="small-title">
+                SHARE YOUR IDEA
+            </p>
+
+            <h2>
+                Report a Campus Problem
+            </h2>
+
+            <p>
+
+                Your small suggestion can help make
+                the campus experience better for everyone.
+
+            </p>
+
+        </div>
+
+
+
+        <!-- FORM -->
+
+        <form action="submit.php"
+              method="POST">
+
+
+            <div class="form-row">
+
+
+                <div class="input-group">
+
+                    <label>
+                        Student Name
+                    </label>
+
+                    <input
+                        type="text"
+                        name="student_name"
+                        placeholder="Enter your name"
+                        required
+                    >
+
+                </div>
+
+
+
+                <div class="input-group">
+
+                    <label>
+                        Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        required
+                    >
+
+                </div>
+
+
+            </div>
+
+
+
+            <div class="form-row">
+
+
+                <div class="input-group">
+
+                    <label>
+                        Category
+                    </label>
+
+                    <select name="category"
+                            required>
+
+                        <option value="">
+                            Select Category
+                        </option>
+
+                        <option value="Classroom">
+                            Classroom
+                        </option>
+
+                        <option value="Laboratory">
+                            Laboratory
+                        </option>
+
+                        <option value="Library">
+                            Library
+                        </option>
+
+                        <option value="Technology">
+                            Technology
+                        </option>
+
+                        <option value="Campus Facility">
+                            Campus Facility
+                        </option>
+
+                        <option value="Other">
+                            Other
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+
+                <div class="input-group">
+
+                    <label>
+                        Priority
+                    </label>
+
+                    <select name="priority"
+                            required>
+
+                        <option value="">
+                            Select Priority
+                        </option>
+
+                        <option value="Low">
+                            Low
+                        </option>
+
+                        <option value="Medium">
+                            Medium
+                        </option>
+
+                        <option value="High">
+                            High
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+            </div>
+
+
+
+            <div class="input-group">
+
+                <label>
+                    Problem Title
+                </label>
+
+                <input
+                    type="text"
+                    name="problem_title"
+                    placeholder="Example: Wi-Fi connection issue"
+                    required
+                >
+
+            </div>
+
+
+
+            <div class="input-group">
+
+                <label>
+                    Describe the Problem
+                </label>
+
+                <textarea
+                    name="description"
+                    rows="5"
+                    placeholder="Explain the problem..."
+                    required
+                ></textarea>
+
+            </div>
+
+
+
+            <div class="input-group">
+
+                <label>
+                    Suggested Solution
+                </label>
+
+                <textarea
+                    name="solution"
+                    rows="4"
+                    placeholder="What solution do you suggest?"
+                ></textarea>
+
+            </div>
+
+
+
+            <button type="submit"
+                    class="submit-button">
+
+                Submit Problem →
+
+            </button>
+
+
+        </form>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <h3>
+        CampusConnect
+    </h3>
+
+    <p>
+        Building a better campus, one idea at a time.
+    </p>
+
+    <p class="copyright">
+        © 2026 CampusConnect
+    </p>
+
+</footer>
+
+
+</body>
+
+</html>
